@@ -15,7 +15,7 @@ import com.wheeler.classmanager.dummy.DummyContent;
  * {@link ClassDetailActivity} on handsets.
  */
 public class ClassDetailFragment extends Fragment {
-	// RICHARD WAS HERE
+	// RICHARD WAS HERE 2014
 	/**
 	 * The fragment argument representing the item ID that this fragment
 	 * represents.
