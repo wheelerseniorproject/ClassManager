@@ -57,4 +57,5 @@ public class ClassDetailFragment extends Fragment {
 
 		return rootView;
 	}
+	
 }

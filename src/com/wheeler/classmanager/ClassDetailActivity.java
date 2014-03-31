@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 /**
@@ -42,6 +44,12 @@ public class ClassDetailActivity extends FragmentActivity {
 			fragment.setArguments(arguments);
 			getSupportFragmentManager().beginTransaction().add(R.id.class_detail_container, fragment).commit();
 		}
+	}
+	
+	public boolean onCreateOptionsMenu(Menu menu){
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.activity_actions, menu);
+		return true;
 	}
 
 	@Override

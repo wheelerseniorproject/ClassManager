@@ -3,6 +3,8 @@ package com.wheeler.classmanager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 /**
  * An activity representing a list of Classes. This activity has different
@@ -70,5 +72,11 @@ public class ClassListActivity extends FragmentActivity implements ClassListFrag
 			detailIntent.putExtra(ClassDetailFragment.ARG_ITEM_ID, id);
 			startActivity(detailIntent);
 		}
+	}
+	
+	public boolean onCreateOptionsMenu(Menu menu){
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.activity_actions, menu);
+		return true;
 	}
 }
