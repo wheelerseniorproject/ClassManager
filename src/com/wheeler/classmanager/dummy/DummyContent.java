@@ -1,9 +1,11 @@
 package com.wheeler.classmanager.dummy;
 
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -25,7 +27,7 @@ public class DummyContent {
 
 	static {
 		// Add 3 sample items.
-		addItem(new DummyItem("1", "Item 1"));
+		addItem(new DummyItem("1", "A Item 1"));
 		addItem(new DummyItem("2", "Item 2"));
 		addItem(new DummyItem("3", "Item 3"));
 	}

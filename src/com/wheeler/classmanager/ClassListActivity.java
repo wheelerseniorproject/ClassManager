@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 /**
  * An activity representing a list of Classes. This activity has different
@@ -79,4 +80,17 @@ public class ClassListActivity extends FragmentActivity implements ClassListFrag
 		inflater.inflate(R.menu.activity_actions, menu);
 		return true;
 	}
+	
+	public boolean onOptionsItemSelected(MenuItem item) {
+		 switch (item.getItemId()) {
+	        case R.id.add_class:
+	            Intent intent = new Intent (this, AddClass.class);
+	            startActivity(intent);
+	            return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+
+		 }
+	}
+	
 }

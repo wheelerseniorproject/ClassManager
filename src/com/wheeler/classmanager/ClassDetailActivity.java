@@ -48,7 +48,7 @@ public class ClassDetailActivity extends FragmentActivity {
 	
 	public boolean onCreateOptionsMenu(Menu menu){
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.activity_actions, menu);
+		inflater.inflate(R.menu.details_actions, menu);
 		return true;
 	}
 
